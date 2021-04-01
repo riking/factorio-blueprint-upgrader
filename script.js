@@ -36,7 +36,11 @@ var factorioEntities = [
     "pipe-to-ground",
     "pump",
     "curved-rail",
+    "se-space-curved-rail",
     "straight-rail",
+    "se-space-straight-rail",
+    "landfill",
+    "se-space-platform-scaffold",
     "train-stop",
     "rail-signal",
     "rail-chain-signal",
@@ -146,6 +150,14 @@ var presets = [
         rules: [
             { "from": "assembling-machine-1", "to": "assembling-machine-2" },
             { "from": "assembling-machine-3", "to": "assembling-machine-2" }
+        ]
+    },
+    {
+        name: "Space Exploration rail converter",
+        rules: [
+            { "from": "landfill", "to": "se-space-platform-scaffold" },
+            { "from": "straight-rail", "to": "se-space-straight-rail" },
+            { "from": "curved-rail", "to": "se-space-curved-rail" }
         ]
     },
     {
