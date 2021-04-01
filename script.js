@@ -157,7 +157,8 @@ var presets = [
         rules: [
             { "from": "landfill", "to": "se-space-platform-scaffold" },
             { "from": "straight-rail", "to": "se-space-straight-rail" },
-            { "from": "curved-rail", "to": "se-space-curved-rail" }
+            { "from": "curved-rail", "to": "se-space-curved-rail" },
+            { "from": "rail", "to": "se-space-rail" }
         ]
     },
     {
