@@ -270,6 +270,16 @@ var app = new Vue({
                     });
                 }
             }.bind(this));
+
+            blueprint.tiles.forEach(function (tile) {
+                if (tile && tile.name) {
+                    this.rules.forEach(function (rule) {
+                        if (tile.name === rule.from) {
+                            tile.name = rule.to;
+                        }
+                    });
+                }
+            }.bind(this));
         }
     }
 });
